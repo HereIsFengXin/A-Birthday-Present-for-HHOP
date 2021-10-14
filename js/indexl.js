@@ -25,7 +25,7 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 5));
     } else {
-      S.UI.simulate('祝作祺|有句话|再不说|就没机会了|生日快乐|Happy Birthday!|#countdown 3||');
+      S.UI.simulate('有句话再不说|就没机会了|生日快乐|Happy Birthday!|#countdown 3||');
     }
 
     S.Drawing.loop(function () {
