@@ -1,17 +1,4 @@
 
-/*
-
-  Shape Shifter
-  =============
-  A canvas experiment by Kenneth Cachia
-  http://www.kennethcachia.com
-
-  Updated code
-  ------------
-  https://github.com/kennethcachia/Shape-Shifter 
-
-*/
-
 // '#countdown 3|hi|祝你|生日快乐|happy birthday||'
 var S = {
   init: function () {
@@ -23,17 +10,17 @@ var S = {
     document.body.classList.add('body--ready');
 
     if (i !== -1) {
-      S.UI.simulate(decodeURI(action).substring(i + 5));
+      S.UI.simulate(decodeURI(action).substring(i + 10000));
     } else {
-      S.UI.simulate('有句话再不说|就没机会了|生日快乐|#countdown 3||');
+      S.UI.simulate('黄浩朋|有句话|我要是|再不跟你说|那可就|没机会了||Happy Birthday!|生日快乐!');
     }
-
+/*下面的m是用于调节时间的，m==的数值越大，气泡字符显示的时间越长*/
     S.Drawing.loop(function () {
             m++;
       S.Shape.render();
       //console.log(m);
-      if(m==700){
-        window.location.href="../html/BirthdayCake.html";
+      if(m==1144){
+        window.location.href="../html/BirthdayCake.html";/*结束之后跳成cake*/
       }
     });
 
@@ -51,7 +38,7 @@ S.Drawing = (function () {
                      window.oRequestAnimationFrame      ||
                      window.msRequestAnimationFrame     ||
                      function(callback) {
-                       window.setTimeout(callback, 1000 / 60);
+                       window.setTimeout(callback, 100000000 / 60);
                      };
 
   return {
