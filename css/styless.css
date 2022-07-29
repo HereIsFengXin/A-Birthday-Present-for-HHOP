@@ -397,7 +397,7 @@ body {
 	top:49%;
 	opacity: 1;
 	animation: happybirthdays 10s;
-	animation-delay: 0s;
+	animation-delay: 3s;
 }
 @keyframes happybirthdays {
 	0% {
